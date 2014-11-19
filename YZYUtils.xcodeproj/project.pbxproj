@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A3E36E421A1C52A200F165F0 /* YZYUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E36E411A1C52A200F165F0 /* YZYUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3E36E5D1A1C568F00F165F0 /* UIView+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E36E5B1A1C568F00F165F0 /* UIView+Util.h */; };
+		A3E36E5D1A1C568F00F165F0 /* UIView+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E36E5B1A1C568F00F165F0 /* UIView+Util.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3E36E5E1A1C568F00F165F0 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E36E5C1A1C568F00F165F0 /* UIView+Util.m */; };
 /* End PBXBuildFile section */
 
@@ -301,6 +301,7 @@
 				A3E36E541A1C52A200F165F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
