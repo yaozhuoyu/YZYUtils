@@ -18,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UIView *subView = [[UIView alloc] initWithFrame:CGRectZero];
-    subView.width = 400.0f;
+    UIImageView *subView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    subView.image = [UIImage imageNamed:@"YZYUtilsCommonResources.bundle/myicon"];
+    subView.width = 100.0f;
     subView.height = 100.0f;
     subView.backgroundColor = [UIColor redColor];
     [self.view addSubview:subView];

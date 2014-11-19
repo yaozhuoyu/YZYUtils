@@ -10,7 +10,18 @@
 		A3E36E421A1C52A200F165F0 /* YZYUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E36E411A1C52A200F165F0 /* YZYUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3E36E5D1A1C568F00F165F0 /* UIView+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E36E5B1A1C568F00F165F0 /* UIView+Util.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3E36E5E1A1C568F00F165F0 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E36E5C1A1C568F00F165F0 /* UIView+Util.m */; };
+		A3E36EB01A1C735800F165F0 /* myicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3E36EAF1A1C735800F165F0 /* myicon@2x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3E36EAB1A1C72B100F165F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E36E331A1C52A200F165F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3E36EA31A1C71FB00F165F0;
+			remoteInfo = YZYUtilsCommonResources;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A3E36E3C1A1C52A200F165F0 /* YZYUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YZYUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,10 +29,20 @@
 		A3E36E411A1C52A200F165F0 /* YZYUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZYUtils.h; sourceTree = "<group>"; };
 		A3E36E5B1A1C568F00F165F0 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
 		A3E36E5C1A1C568F00F165F0 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		A3E36EA41A1C71FB00F165F0 /* YZYUtilsCommonResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZYUtilsCommonResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E36EA71A1C71FB00F165F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3E36EAF1A1C735800F165F0 /* myicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myicon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A3E36E381A1C52A200F165F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E36EA11A1C71FB00F165F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E36E3E1A1C52A200F165F0 /* YZYUtils */,
+				A3E36EA51A1C71FB00F165F0 /* YZYUtilsCommonResources */,
 				A3E36E3D1A1C52A200F165F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E36E3C1A1C52A200F165F0 /* YZYUtils.framework */,
+				A3E36EA41A1C71FB00F165F0 /* YZYUtilsCommonResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +105,39 @@
 			path = NSStrings;
 			sourceTree = "<group>";
 		};
+		A3E36EA51A1C71FB00F165F0 /* YZYUtilsCommonResources */ = {
+			isa = PBXGroup;
+			children = (
+				A3E36EAD1A1C72E200F165F0 /* Images */,
+				A3E36EAE1A1C731500F165F0 /* Xibs */,
+				A3E36EA61A1C71FB00F165F0 /* Supporting Files */,
+			);
+			path = YZYUtilsCommonResources;
+			sourceTree = "<group>";
+		};
+		A3E36EA61A1C71FB00F165F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3E36EA71A1C71FB00F165F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3E36EAD1A1C72E200F165F0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A3E36EAF1A1C735800F165F0 /* myicon@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A3E36EAE1A1C731500F165F0 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,11 +165,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				A3E36EAC1A1C72B100F165F0 /* PBXTargetDependency */,
 			);
 			name = YZYUtils;
 			productName = YZYUtils;
 			productReference = A3E36E3C1A1C52A200F165F0 /* YZYUtils.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		A3E36EA31A1C71FB00F165F0 /* YZYUtilsCommonResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E36EA81A1C71FB00F165F0 /* Build configuration list for PBXNativeTarget "YZYUtilsCommonResources" */;
+			buildPhases = (
+				A3E36EA01A1C71FB00F165F0 /* Sources */,
+				A3E36EA11A1C71FB00F165F0 /* Frameworks */,
+				A3E36EA21A1C71FB00F165F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YZYUtilsCommonResources;
+			productName = YZYUtilsCommonResources;
+			productReference = A3E36EA41A1C71FB00F165F0 /* YZYUtilsCommonResources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -125,6 +199,9 @@
 				ORGANIZATIONNAME = "姚卓禹";
 				TargetAttributes = {
 					A3E36E3B1A1C52A200F165F0 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					A3E36EA31A1C71FB00F165F0 = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
@@ -142,6 +219,7 @@
 			projectRoot = "";
 			targets = (
 				A3E36E3B1A1C52A200F165F0 /* YZYUtils */,
+				A3E36EA31A1C71FB00F165F0 /* YZYUtilsCommonResources */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +229,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E36EA21A1C71FB00F165F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E36EB01A1C735800F165F0 /* myicon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +251,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3E36EA01A1C71FB00F165F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3E36EAC1A1C72B100F165F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3E36EA31A1C71FB00F165F0 /* YZYUtilsCommonResources */;
+			targetProxy = A3E36EAB1A1C72B100F165F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A3E36E501A1C52A200F165F0 /* Debug */ = {
@@ -282,6 +383,39 @@
 			};
 			name = Release;
 		};
+		A3E36EA91A1C71FB00F165F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YZYUtilsCommonResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A3E36EAA1A1C71FB00F165F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = YZYUtilsCommonResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -302,6 +436,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A3E36EA81A1C71FB00F165F0 /* Build configuration list for PBXNativeTarget "YZYUtilsCommonResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E36EA91A1C71FB00F165F0 /* Debug */,
+				A3E36EAA1A1C71FB00F165F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

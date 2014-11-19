@@ -15,6 +15,7 @@
 		A3E36E7D1A1C5D6900F165F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3E36E7B1A1C5D6900F165F0 /* LaunchScreen.xib */; };
 		A3E36E9A1A1C5F0C00F165F0 /* YZYUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E36E971A1C5DB300F165F0 /* YZYUtils.framework */; };
 		A3E36E9B1A1C5F0C00F165F0 /* YZYUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3E36E971A1C5DB300F165F0 /* YZYUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3E36EB41A1C73D100F165F0 /* YZYUtilsCommonResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3E36EB31A1C73D100F165F0 /* YZYUtilsCommonResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = A3E36E3B1A1C52A200F165F0;
 			remoteInfo = YZYUtils;
+		};
+		A3E36EB21A1C73D100F165F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E36E921A1C5DB300F165F0 /* YZYUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3E36EA41A1C71FB00F165F0;
+			remoteInfo = YZYUtilsCommonResources;
+		};
+		A3E36EB51A1C73E000F165F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E36E921A1C5DB300F165F0 /* YZYUtils.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A3E36EA31A1C71FB00F165F0;
+			remoteInfo = YZYUtilsCommonResources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -126,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E36E971A1C5DB300F165F0 /* YZYUtils.framework */,
+				A3E36EB31A1C73D100F165F0 /* YZYUtilsCommonResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +161,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A3E36EB61A1C73E000F165F0 /* PBXTargetDependency */,
 				A3E36E991A1C5DBB00F165F0 /* PBXTargetDependency */,
 				A3E36E9D1A1C5F0C00F165F0 /* PBXTargetDependency */,
 			);
@@ -199,6 +216,13 @@
 			remoteRef = A3E36E961A1C5DB300F165F0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		A3E36EB31A1C73D100F165F0 /* YZYUtilsCommonResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = YZYUtilsCommonResources.bundle;
+			remoteRef = A3E36EB21A1C73D100F165F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -209,6 +233,7 @@
 				A3E36E781A1C5D6900F165F0 /* Main.storyboard in Resources */,
 				A3E36E7D1A1C5D6900F165F0 /* LaunchScreen.xib in Resources */,
 				A3E36E7A1A1C5D6900F165F0 /* Images.xcassets in Resources */,
+				A3E36EB41A1C73D100F165F0 /* YZYUtilsCommonResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +262,11 @@
 			isa = PBXTargetDependency;
 			name = YZYUtils;
 			targetProxy = A3E36E9C1A1C5F0C00F165F0 /* PBXContainerItemProxy */;
+		};
+		A3E36EB61A1C73E000F165F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YZYUtilsCommonResources;
+			targetProxy = A3E36EB51A1C73E000F165F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
